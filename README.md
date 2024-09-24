@@ -21,7 +21,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/sorting-visualizer.git
+git clone https://github.com/Rashmi-Singh11/Visualization
 cd sorting-visualizer
 Open the index.html file in your web browser to view the application.
 
