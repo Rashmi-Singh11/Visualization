@@ -46,4 +46,5 @@ Inspired by the need to understand sorting algorithms through visual representat
 Thanks to all contributors and open-source libraries that helped in the development of this project.
 
 #Live
+
 https://visualization-teal-nine.vercel.app/
