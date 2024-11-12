@@ -44,3 +44,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Acknowledgements
 Inspired by the need to understand sorting algorithms through visual representation.
 Thanks to all contributors and open-source libraries that helped in the development of this project.
+#Live
+https://visualization-teal-nine.vercel.app/
