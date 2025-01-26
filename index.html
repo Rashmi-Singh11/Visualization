@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animation for the heading */
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Navbar hover effect */
+    .navbar-item:hover {
+      color: #38bdf8;
+      transform: scale(1.1);
+      transition: transform 0.3s, color 0.3s;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Main Container -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 py-4 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-extrabold text-blue-500">Sorting Visualizer</div>
+        <ul class="flex space-x-6">
+          <li><a href="bubble-sort.html" class="navbar-item text-lg">Bubble Sort</a></li>
+          <li><a href="insertion-sort.html" class="navbar-item text-lg">Insertion Sort</a></li>
+          <li><a href="selection-sort.html" class="navbar-item text-lg">Selection Sort</a></li>
+          <li><a href="merge-sort.html" class="navbar-item text-lg">Merge Sort</a></li>
+          <li><a href="quick-sort.html" class="navbar-item text-lg">Quick Sort</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="flex-1 flex flex-col justify-center items-center text-center px-4 relative">
+      <!-- Decorative Image -->
+      <img 
+        src="visual.png" 
+        alt="Sorting Visual" 
+        class="absolute top-10 left-10 w-40 opacity-50"
+      >
+      <img 
+        src="illustration.webp" 
+        alt="Sorting Illustration" 
+        class="absolute bottom-10 right-10 w-40 opacity-50"
+      >
+      <!-- Heading and Description -->
+      <h1 class="text-6xl font-extrabold text-blue-400 fade-in">Sorting Visualizer</h1>
+      <p class="text-lg text-gray-300 mt-4 fade-in">
+        Discover and interact with popular sorting algorithms through stunning visualizations!
+      </p>
+      <!-- Action Button -->
+      <a
+        href="bubble-sort.html"
+        class="mt-8 px-6 py-3 bg-blue-500 text-lg font-semibold rounded-lg hover:bg-blue-400 transition duration-300"
+      >
+        Get Started
+      </a>
+    </header>
+
+    <!-- Sorting Algorithms Section -->
+    <section class="py-12 bg-gray-900">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Algorithm Card 1 -->
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <img src="bubblesort.jpg" alt="Bubble Sort" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-blue-400">Bubble Sort</h3>
+            <p class="text-gray-300 mt-2">
+              Learn how Bubble Sort works with an intuitive, interactive visualization.
+            </p>
+            <a href="bubble-sort.html" class="text-blue-400 mt-4 block hover:underline">Explore</a>
+          </div>
+        </div>
+        <!-- Algorithm Card 2 -->
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <img src="insertion.jpeg" alt="Insertion Sort" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-blue-400">Insertion Sort</h3>
+            <p class="text-gray-300 mt-2">
+              Visualize Insertion Sort step-by-step and understand its efficiency.
+            </p>
+            <a href="insertion-sort.html" class="text-blue-400 mt-4 block hover:underline">Explore</a>
+          </div>
+        </div>
+        <!-- Algorithm Card 3 -->
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <img src="merge.jpeg" alt="Merge Sort" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-blue-400">Merge Sort</h3>
+            <p class="text-gray-300 mt-2">
+              Dive deep into the Divide and Conquer strategy of Merge Sort.
+            </p>
+            <a href="merge-sort.html" class="text-blue-400 mt-4 block hover:underline">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-4 text-center">
+      <p>© 2025 Sorting Visualizer. Built with 💖 for algorithm enthusiasts.</p>
+    </footer>
+  </div>
+</body>
+</html>
