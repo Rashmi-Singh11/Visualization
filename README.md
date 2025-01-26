@@ -39,4 +39,8 @@ A **Sorting Visualizer** is a web-based application that visually demonstrates t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/sorting-visualizer.git
+   git clone https://github.com/Rashmi-Singh11/Visualization
+
+### Live Demo
+https://rashmi-visualization-27j5.vercel.app/
+   
