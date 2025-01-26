@@ -1,50 +1,42 @@
-# Visualization
-Overview
-The Sorting Visualizer is a web application that visually demonstrates various sorting algorithms, including Bubble Sort, Insertion Sort, Quick Sort, and Merge Sort. Users can generate a random array of integers and watch the algorithms sort the array in real time, with the heights of the bars representing the values in the array.
+# Sorting Visualizer
 
-Technologies Used
-HTML: Structure of the web application.
-CSS: Styling and layout to create an attractive user interface.
-JavaScript: Functionality and logic for the sorting algorithms and interaction handling.
-Features
-Random Array Generation: Generate a new array of random integers to visualize sorting.
-Sorting Algorithms: Choose from four different sorting algorithms:
-Bubble Sort
-Insertion Sort
-Quick Sort
-Merge Sort
-Real-time Visualization: The heights of the bars change as the sorting algorithms progress, allowing users to see how the sorting works step-by-step.
-Stop Button: Users can stop the sorting process at any time, providing control over the visualization.
-Number Display: Each bar displays the value it represents for easy understanding of the sorting process.
-Installation
-Clone the Repository:
+A **Sorting Visualizer** is a web-based application that visually demonstrates the workings of popular sorting algorithms. Built using **HTML**, **CSS**, and **JavaScript**, this project allows users to interact with various sorting algorithms and observe how they process and organize data step by step.
 
-bash
-Copy code
-git clone https://github.com/Rashmi-Singh11/Visualization
-cd sorting-visualizer
-Open the index.html file in your web browser to view the application.
+## Features
 
-Usage
-Click the "Generate Array" button to create a new random array.
-Select a sorting algorithm by clicking on the corresponding button (Bubble Sort, Insertion Sort, Quick Sort, or Merge Sort).
-Watch the sorting process in real-time as the bars change color and height.
-Click the "Stop Sorting" button to halt the sorting process at any time.
-Code Explanation
-generateRandomArray(size): Generates a random array of integers and updates the visual representation.
-updateArrayInDOM(): Updates the DOM to reflect the current state of the array with bars representing values.
-highlightBars(indices, color): Highlights specific bars during the sorting process for visual feedback.
-Sorting Algorithms: Each algorithm (Bubble Sort, Insertion Sort, Quick Sort, Merge Sort) is implemented as an asynchronous function that updates the visualization step-by-step.
-Contribution
-Contributions are welcome! If you have suggestions for improvements or features, please feel free to submit a pull request.
+- **Interactive User Interface**
+  - Adjustable array size.
+  - Adjustable sorting speed.
+  - Buttons to start, pause, resume, and restart sorting.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **Supported Sorting Algorithms**
+  - Insertion Sort
+  - Selection Sort
+  - Merge Sort
+  - Quick Sort
 
-Acknowledgements
-Inspired by the need to understand sorting algorithms through visual representation.
-Thanks to all contributors and open-source libraries that helped in the development of this project.
+- **Real-Time Visualization**
+  - Dynamic bar heights represent array values.
+  - Color-coded bars indicate comparisons, swaps, and sorted elements:
+    - **Yellow:** Pivot element or key being evaluated.
+    - **Red:** Current elements being compared.
+    - **Green:** Sorted elements.
+    - **Blue:** Unscrutinized elements.
 
-#Live
+## How It Works
 
-https://rashmi-visualization-27j5.vercel.app/
+1. The application generates a random array of numbers.
+2. Users can select the array size and sorting speed.
+3. The chosen sorting algorithm processes the array while visually representing each step of the sorting process.
+
+## Setup
+
+### Prerequisites
+
+- A web browser (e.g., Chrome, Firefox, Edge).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/sorting-visualizer.git
