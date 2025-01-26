@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selection Sort Visualizer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bar {
+      transition: height 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-900 py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-extrabold text-blue-500">Sorting Visualizer</a>
+      <ul class="flex space-x-6">
+        <li><a href="bubble-sort.html" class="text-lg hover:text-blue-400">Bubble Sort</a></li>
+        <li><a href="insertion-sort.html" class="text-lg hover:text-blue-400">Insertion Sort</a></li>
+        <li><a href="selection-sort.html" class="text-lg hover:text-blue-400">Selection Sort</a></li>
+        <li><a href="merge-sort.html" class="text-lg hover:text-blue-400">Merge Sort</a></li>
+        <li><a href="quick-sort.html" class="text-lg hover:text-blue-400">Quick Sort</a></li>
+        <li><a href="index.html" class="text-lg hover:text-blue-400">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center py-8">
+    <h1 class="text-4xl font-extrabold text-blue-400">Selection Sort Visualizer</h1>
+    <p class="text-lg text-gray-300 mt-2">Adjust settings and watch the algorithm in action!</p>
+  </header>
+
+  <!-- Sorting Controls -->
+  <div class="container mx-auto mt-6">
+    <div class="flex flex-wrap justify-center items-center gap-4">
+      <!-- Array Size -->
+      <div class="flex items-center space-x-2">
+        <label for="array-size" class="text-lg">Array Size:</label>
+        <input id="array-size" type="range" min="5" max="50" value="10" class="w-32">
+        <span id="array-size-display" class="text-blue-400">10</span>
+      </div>
+
+      <!-- Speed Control -->
+      <div class="flex items-center space-x-2">
+        <label for="speed-control" class="text-lg">Speed:</label>
+        <input id="speed-control" type="range" min="50" max="1000" value="300" class="w-32">
+        <span id="speed-display" class="text-blue-400">300ms</span>
+      </div>
+
+      <!-- Control Buttons -->
+      <div class="flex space-x-4">
+        <button id="start-button" class="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-400">Start</button>
+        <button id="stop-button" class="px-4 py-2 bg-red-500 rounded-lg hover:bg-red-400">Stop</button>
+        <button id="resume-button" class="px-4 py-2 bg-green-500 rounded-lg hover:bg-green-400">Resume</button>
+        <button id="restart-button" class="px-4 py-2 bg-yellow-500 rounded-lg hover:bg-yellow-400">Restart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sorting Container -->
+  <div id="bars-container" class="flex justify-center items-end space-x-2 h-80 bg-gray-800 p-4 rounded-lg mt-8">
+    <!-- Bars will be dynamically generated -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-4 text-center mt-8">
+    <p>© 2025 Sorting Visualizer. Built with 💖 for algorithm enthusiasts.</p>
+  </footer>
+
+  <script src="selection-sort.js"></script>
+</body>
+</html>
