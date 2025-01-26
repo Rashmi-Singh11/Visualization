@@ -47,4 +47,4 @@ Thanks to all contributors and open-source libraries that helped in the developm
 
 #Live
 
-https://visualization-teal-nine.vercel.app/
+https://rashmi-visualization-27j5.vercel.app/
